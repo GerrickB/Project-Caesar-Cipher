@@ -10,7 +10,7 @@ def caesar_cipher(string, shift)
     shift.times do
         new_array = []
         string_array.each do |string|
-            if string != " "
+            if string.count("a-zA-Z") > 0
                 new_array.push(string.next)
             else
                 new_array.push(string)
@@ -22,4 +22,8 @@ def caesar_cipher(string, shift)
     print string_array
 end
 
-caesar_cipher('computer', 7)
+def format_cipher(array)
+    
+end
+
+caesar_cipher('What a string!', 5)
