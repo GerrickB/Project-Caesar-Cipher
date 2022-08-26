@@ -19,11 +19,20 @@ def caesar_cipher(string, shift)
         string_array = new_array 
     end
 
-    print string_array
+    print format_cipher(string_array)
 end
 
 def format_cipher(array)
-    
+    format_array = []
+
+    array.each do |string|
+        if string.length > 1
+            format_array.push(string[1])
+        else
+            format_array.push(string)
+        end
+    end
+    format_array.join
 end
 
 caesar_cipher('What a string!', 5)
