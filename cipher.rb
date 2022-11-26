@@ -2,7 +2,6 @@
 # str.split("")
 # ["h", "e", "l", "l", "o", " ", "t", "h", "e", "r", "e"]
 # use .next or .next!
-# Not woriking: string_array = string_array.filter_map { |string| string.next unless string == " " }
 
 def caesar_cipher(string, shift)
     string_array = string.split("")
