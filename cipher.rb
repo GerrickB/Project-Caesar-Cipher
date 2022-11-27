@@ -2,6 +2,7 @@
 # str.split("")
 # ["h", "e", "l", "l", "o", " ", "t", "h", "e", "r", "e"]
 # use .next or .next!
+require 'pry-byebug'
 
 def caesar_cipher(string, shift)
     string_array = string.split("")
@@ -11,6 +12,8 @@ def caesar_cipher(string, shift)
         string_array.each do |string|
             if string.count("a-zA-Z") > 0
                 new_array.push(string.next)
+                
+                binding.pry
             else
                 new_array.push(string)
             end
